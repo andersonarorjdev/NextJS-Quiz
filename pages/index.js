@@ -1,10 +1,22 @@
 import styled from 'styled-components'
+import DB from '../db.json';
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
+const Background = styled.div`
+  background-image:url(${DB.bg});
+  flex:1;
+  background-size:cover;
+  background-position:auto;
+  min-height:100vh;
 `
 
-export default function Home() {
-  return <Title>My page</Title>
+const BackgroundDIV = props =>{
+  return(
+        <div>
+          <Background>
+            Hello
+          </Background>
+        </div>
+  )
 }
+
+export default BackgroundDIV;
