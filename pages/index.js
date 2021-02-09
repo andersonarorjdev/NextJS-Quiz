@@ -33,7 +33,7 @@ const BackgroundDIV = props =>{
         <div>
           <Background>
             <QuizContainer>
-
+           
               <Widget>
                 <Widget.header>
                   <h1>Title</h1>
